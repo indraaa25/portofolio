@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indra Maulana | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+        background: radial-gradient(circle at top left, #2e026d, #0f0f1f, #000);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        }
+        .glass {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .glow {
+        box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+        }
+    </style>
+</head>
+    <body class="overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full glass z-50">
+        <div class="flex justify-between items-center px-6 py-4">
+        <h1 class="text-xl font-extrabold text-purple-400">
+            Indra<span class="text-red-400">_Portfolio</span>
+        </h1>
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+            <!-- ikon hamburger -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <nav id="menu" class="hidden md:flex space-x-6 text-white">
+            <a href="#home" class="hover:text-purple-300 transition">Beranda</a>
+            <a href="#about" class="hover:text-purple-300 transition">Tentang</a>
+            <a href="#skills" class="hover:text-purple-300 transition">Keahlian</a>
+            <a href="#portfolio" class="hover:text-purple-300 transition">Portofolio</a>
+            <a href="#contact" class="hover:text-purple-300 transition">Kontak</a>
+        </nav>
+        </div>
+        <!-- menu mobile -->
+        <div id="mobile-menu" class="hidden flex-col md:hidden bg-black bg-opacity-70 text-center">
+        <a href="#home" class="py-3 block hover:bg-purple-600">Beranda</a>
+        <a href="#about" class="py-3 block hover:bg-purple-600">Tentang</a>
+        <a href="#skills" class="py-3 block hover:bg-purple-600">Keahlian</a>
+        <a href="#portfolio" class="py-3 block hover:bg-purple-600">Portofolio</a>
+        <a href="#contact" class="py-3 block hover:bg-purple-600">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
+        <div class="glass p-8 md:p-12 rounded-3xl glow max-w-2xl">
+        <img src="images/3.jpeg" alt="Profil" class="w-32 h-32 rounded-full object-cover mx-auto border-4 border-purple-400">
+        <h2 class="text-3xl md:text-5xl font-bold mb-3">Halo, Saya <span class="text-purple-400">Indra Maulana</span></h2>
+        <p class="text-gray-200 text-base md:text-lg max-w-xl mx-auto mb-6">
+            Saya seorang <span class="text-red-400 font-semibold">Web Developer</span> yang menciptakan pengalaman digital realistis dan modern dengan sentuhan desain futuristik.
+        </p>
+        <a href="#portfolio" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full transition glow inline-block">Lihat Portofolio</a>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-purple-300 mb-8">Tentang Saya</h2>
+        <div class="glass p-8 rounded-3xl">
+            <p class="text-gray-200 leading-relaxed text-base md:text-lg">
+            Saya lulusan SMKN 1 Kawali jurusan Rekayasa Perangkat Lunak. 
+            Saya menciptakan tampilan web realistis dengan kombinasi warna ungu, merah, dan putih agar terasa hangat dan profesional.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-purple-300 mb-12">Keahlian</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass p-6 rounded-2xl hover:scale-105 transform transition glow">
+            <h3 class="text-xl font-semibold text-purple-400 mb-2">Frontend Developer</h3>
+            <p class="text-gray-300">HTML, TailwindCSS, efek animasi & desain interaktif.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl hover:scale-105 transform transition glow">
+            <h3 class="text-xl font-semibold text-purple-400 mb-2">Backend Developer</h3>
+            <p class="text-gray-300">Laravel, MySQL, API, dan sistem manajemen data dinamis.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl hover:scale-105 transform transition glow">
+            <h3 class="text-xl font-semibold text-purple-400 mb-2">UI/UX Designer</h3>
+            <p class="text-gray-300">Figma, user flow realistis, pengalaman digital immersive.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section id="portfolio" class="py-24 px-6 bg-transparent">
+        <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-purple-300 mb-12">Portofolio</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="glass rounded-3xl overflow-hidden hover:scale-105 transform transition glow">
+            <img src="https://via.placeholder.com/400x250" alt="Portfolio 1" class="w-full h-48 object-cover">
+            <div class="p-6 text-left">
+                <h3 class="text-xl font-semibold text-purple-400">Sistem Manajemen Siswa</h3>
+                <p class="text-gray-300 mt-2 text-sm">Aplikasi Laravel untuk mengelola data siswa.</p>
+                <a href="#" class="text-purple-400 mt-3 inline-block hover:underline">Lihat Proyek</a>
+            </div>
+            </div>
+            <div class="glass rounded-3xl overflow-hidden hover:scale-105 transform transition glow">
+            <img src="https://via.placeholder.com/400x250" alt="Portfolio 2" class="w-full h-48 object-cover">
+            <div class="p-6 text-left">
+                <h3 class="text-xl font-semibold text-purple-400">Website Company Profile</h3>
+                <p class="text-gray-300 mt-2 text-sm">Tampilan profesional dan elegan.</p>
+                <a href="#" class="text-purple-400 mt-3 inline-block hover:underline">Lihat Proyek</a>
+            </div>
+            </div>
+            <div class="glass rounded-3xl overflow-hidden hover:scale-105 transform transition glow">
+            <img src="https://via.placeholder.com/400x250" alt="Portfolio 3" class="w-full h-48 object-cover">
+            <div class="p-6 text-left">
+                <h3 class="text-xl font-semibold text-purple-400">E-Commerce Realistik</h3>
+                <p class="text-gray-300 mt-2 text-sm">Desain glasmorphism dengan nuansa futuristik.</p>
+                <a href="#" class="text-purple-400 mt-3 inline-block hover:underline">Lihat Proyek</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-lg mx-auto text-center">
+        <h2 class="text-3xl font-bold text-purple-300 mb-12">Hubungi Saya</h2>
+        <form class="glass p-8 rounded-3xl glow">
+            <input type="text" placeholder="Nama" class="w-full bg-transparent border border-gray-500 p-3 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <input type="email" placeholder="Email" class="w-full bg-transparent border border-gray-500 p-3 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <textarea placeholder="Pesan" rows="4" class="w-full bg-transparent border border-gray-500 p-3 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full transition shadow-md w-full md:w-auto">Kirim Pesan</button>
+        </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-gray-400">
+        <p>&copy; 2025 Indra Maulana. Dibuat dengan 💜 dalam ruang digital.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+    </body>
+</html>
